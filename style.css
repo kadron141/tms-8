@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.make-order {
+    background: #F2F2F2;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    border-bottom: 0.5px solid #A4ACAD;
+    padding: 10px 0 10px 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.go-back-info,  .phone-description,  .phone-number, .work-hours {
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.phone-number {
+    color: #FF9846;
+}
+
+.work-hours {
+    color: #A4ACAD;
+    font-size: 14px;
+}
+
+.go-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.go-back-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #FF9846;
+    margin-right: 10px;
+}
+
+.go-back-arrow::before {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(6px, 12px) rotate(45deg);
+}
+
+.go-back-arrow::after {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(6px, 8px) rotate(-45deg);
+}
+
+h2 {
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin: 55px 300px 30px;
+}
+
+.basic-input {
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Raleway',  sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+}
+
+.tel-input {
+    margin-right: 20px;
+}
+
+.radio-base {
+    display: none;
+}
+
+.radio-base:checked + .radio-input {
+    background: #FF9846;
+    color: white;
+}
+
+.radio-input {
+    display: inline-block;
+    width: 180px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.radio-input.left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.radio-input.right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -5px;
+}

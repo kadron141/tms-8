@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Вход на сайт</title>
+</head>
+
+<body>
+    <section class="make-order">
+        <header class="header">
+            <div class="go-back">
+                <div class="go-back-arrow"></div>
+                <span class="go-back-info">Продолжить выбор</span>
+            </div>
+
+            <p class="contact-info">
+                <span class="phone-description">Наш телефон</span>
+                <span class="phone-number">
+                    +996 705 188 955
+                </span>
+                <span class="phone-number">
+                    +996 555 188 955
+                </span>
+                <span class="work-hours">
+                    <img src="./clock.png" alt="clock">
+                    работаем с 10:00 до 00:00
+                </span>
+            </p>
+        </header>
+
+        <form class="form">
+            <h2>Ваши данные</h2>
+
+            <div>
+                <input type="tel" placeholder="Телефон" class="basic-input tel-input">
+                <input type="text" placeholder="Имя" class="basic-input">
+
+                <input class="radio-base" type="radio" name="payType" id="cash" checked>
+                <label class="basic-input radio-input left" for="cash">Наличными</label>
+
+                <input class="radio-base" type="radio" name="payType" id="card">
+                <label class="basic-input radio-input right" for="card">Картой</label>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
